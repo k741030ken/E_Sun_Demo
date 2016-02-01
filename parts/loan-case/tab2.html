@@ -1,0 +1,267 @@
+            <h3>分項額度資料維護</h3>
+            <div class="form-wrap">
+              <div class="form-row">
+                <div class="col-2"><span class="form-label"><label for="text-1">聯貸案名稱</label></span></div>
+                <div class="col-10"><span class="text-field">案件名稱</span></div>
+              </div>
+              <div class="form-row">
+                <div class="col-2"><span class="form-label"><label for="text-1">授信總額度</label></span></div>
+                <div class="col-4"><span class="text-field">NTD 123,456,789</span></div>
+                <div class="col-1"><span class="form-label"><label for="text-1">案件編號</label></span></div>
+                <div class="col-5"><span class="text-field">2015112501</span></div>
+              </div>
+            </div><!-- /.form-wrap -->
+            <h4>分項額度資料</h4>
+            <div class="row">
+              <div class="tab-list-wrap">
+                <ul id="tabSet" class="tabSet tabs txn-tab-lv2">
+                  <li><a href="#tab-lv2-1">甲項</a></li>
+                  <li><a href="#tab-lv2-2">乙項</a></li>
+                </ul>
+                <a href="#" class="add-tab-btn">新增</a>
+              </div>
+              <div class="tab-content-wrap">
+                <div id="tab-lv2-1" class="tab-content">
+                  <div class="form-wrap">
+                    <div class="form-row">
+                      <div class="col-2"><span class="form-label required"><label for="select-1">分項額度名稱</label></span></div>
+                      <div class="col-4">
+                        <select name="" id="select-1">
+                          <option value="">甲項</option>
+                          <option value="">選項二</option>
+                          <option value="">選項三</option>
+                        </select>
+                      </div>
+                      <div class="col-2"><span class="form-label required"><label for="select-2">授信種類</label></span></div>
+                      <div class="col-4">
+                        <select name="" id="select-2">
+                          <option value="">長期放款</option>
+                          <option value="">選項二</option>
+                          <option value="">選項三</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-2"><span class="form-label required"><label for="text-1">分項額度</label></span></div>
+                      <div class="col-4">
+                        <select name="" id="select-1">
+                          <option value="">NTD</option>
+                          <option value="">選項二</option>
+                          <option value="">選項三</option>
+                        </select>
+                        <input type="text" placeholder="10,000,000,000"> 元
+                      </div>
+                      <div class="col-2"><span class="form-label"><label for="text-1">首次動用日期</label></span></div>
+                      <div class="col-4"><input id="date-1" class="input-date" type="text" placeholder="YYYY/MM/DD"></div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-2"><span class="form-label required"><label for="select-3">借款人</label></span></div>
+                      <div class="col-10">
+                        <select name="" id="select-3">
+                          <option value="">YYY 公司</option>
+                          <option value="">選項二</option>
+                          <option value="">選項三</option>
+                        </select>   
+                        <a href="#" class="btn btn-green btn-sm">新增</a>   
+                        <div class="table-wrapper">
+                          <table class="datalist-table">
+                            <thead>
+                              <tr>
+                                <th width="6%">功能</th>
+                                <th width="6%">序號</th>
+                                <th width="12%">統編</th>
+                                <th>借款人名稱 / 共同借款人名稱</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div><!-- /.table-wrapper -->                 
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-2"><span class="form-label"><label for="select-4">連帶保證人</label></span></div>
+                      <div class="col-10">
+                        <select name="" id="select-4">
+                          <option value="">ooo 名稱</option>
+                          <option value="">選項二</option>
+                          <option value="">選項三</option>
+                        </select>    
+                        <div class="table-wrapper">
+                          <table class="datalist-table">
+                            <thead>
+                              <tr>
+                                <th width="6%">功能</th>
+                                <th width="6%">序號</th>
+                                <th width="12%">統編</th>
+                                <th>借款人名稱 / 共同借款人名稱</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div><!-- /.table-wrapper -->                 
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-2"><span class="form-label required"><label for="select-5">稅率方式</label></span></div>
+                      <div class="col-4">
+                        <select name="" id="select-5">
+                          <option value="">借款人負擔 - 非支票繳息</option>
+                          <option value="">選項二</option>
+                          <option value="">選項三</option>
+                        </select>  
+                      </div>
+                      <div class="col-1"><span class="form-label"><label for="">稅率</label></span></div>
+                      <div class="col-5"><span class="text-field">0.946</span></div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-2"><span class="form-label required"><label for="select-6">動用方式</label></span></div>
+                      <div class="col-4">
+                        <select name="" id="select-6">
+                          <option value="">一次動用</option>
+                          <option value="">選項二</option>
+                          <option value="">選項三</option>
+                        </select>  
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-2"><span class="form-label required"><label for="radio-1">動用期限</label></span></div>
+                      <div class="col-10">
+                        <input id="radio-2-1" type="radio" name="radio-group-2-1" checked>
+                        <label for="radio-2-1" class="form-label-multi">
+                          <span>
+                            <select name="" id="select-1">
+                              <option value="">全案</option>
+                              <option value="">選項二</option>
+                              <option value="">選項三</option>
+                            </select>  
+                            <span class="form-label">首次動用日起</span>
+                            <input type="text" placeholder="999" size="3"> 月
+                          </span>
+                        </label>
+                        <input id="radio-2-2" type="radio" name="radio-group-2-1">
+                        <label for="radio-2-2" class="form-label-multi">
+                          <span>
+                            <span class="form-label">簽約日起</span>
+                            <input type="text" placeholder="999" size="3"> 月
+                          </span>
+                        </label>
+                        <input id="radio-2-3" type="radio" name="radio-group-2-1">
+                        <label for="radio-2-3" class="form-label-multi">
+                          <span>
+                            <span class="form-label">指定日期</span>
+                            <input id="date-2" class="input-date" type="text" placeholder="YYYY/MM/DD" size="16">
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-2"><span class="form-label required"><label for="text-1">最後到期日</label></span></div>
+                      <div class="col-10">
+                        <input id="radio-2-4" type="radio" name="radio-group-2-2">
+                        <label for="radio-2-4" class="form-label-multi">
+                          <span>
+                            <select name="" id="select-1">
+                              <option value="">全案</option>
+                              <option value="">選項二</option>
+                              <option value="">選項三</option>
+                            </select>  
+                            <span class="form-label">首次動用日起</span>
+                            <input type="text" placeholder="999" size="3"> 月
+                          </span>
+                        </label>
+                        <input id="radio-2-5" type="radio" name="radio-group-2-2" checked>
+                        <label for="radio-2-5" class="form-label-multi">
+                          <span>
+                            <span class="form-label">簽約日起</span>
+                            <input type="text" placeholder="999" size="3"> 月
+                          </span>
+                        </label>
+                        <input id="radio-2-6" type="radio" name="radio-group-2-2">
+                        <label for="radio-2-6" class="form-label-multi">
+                          <span>
+                            <span class="form-label">指定日期</span>
+                            <input id="date-3" class="input-date" type="text" placeholder="YYYY/MM/DD" size="16">  
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-2"><span class="form-label required"><label for="text-1">每次動用時間</label></span></div>
+                      <div class="col-10">
+                        <input id="radio-2-7" type="radio" name="radio-group-2-3">
+                        <label for="radio-2-7" class="form-label-multi">
+                          <span>
+                            <select name="" id="select-1">
+                              <option value="">全案</option>
+                              <option value="">選項二</option>
+                              <option value="">選項三</option>
+                            </select>  
+                            <span class="form-label">首次動用日起</span>
+                            <input type="text" placeholder="999" size="3"> 月
+                          </span>
+                        </label>
+                        <input id="radio-2-8" type="radio" name="radio-group-2-3">
+                        <label for="radio-2-8" class="form-label-multi">
+                          <span>
+                            <span class="form-label">簽約日起</span>
+                            <input type="text" placeholder="999" size="3"> 月
+                          </span>
+                        </label>
+                        <input id="radio-2-9" type="radio" name="radio-group-2-3" checked>
+                        <label for="radio-2-9" class="form-label-multi">
+                          <span>
+                            <span class="form-label">指定日期</span>
+                            <input id="date-4" class="input-date" type="text" placeholder="YYYY/MM/DD" size="16">
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-2"><span class="form-label required"><label for="text-1">每次動用金額</label></span></div>
+                      <div class="col-1"><span class="form-label">幣別</span></div>
+                      <div class="col-1"><span class="text-field">NTD</span></div>
+                      <div class="col-3"><span class="form-label">最低動用金額</span> <input type="text" placeholder="10,000,000,000" size="16"> 元</div>
+                      <div class="col-4"><span class="form-label">每次增額單位金額</span> <input type="text" placeholder="10,000,000,000" size="16"> 元</div>
+                    </div>
+                  </div><!-- /.form-wrap -->
+                  <div class="btn-row">  
+                    <div class="row">
+                      <div class="col-10 pull-right">
+                        <a href="#" class="btn btn-green btn-md" role="button">儲存</a>
+                        <a href="#" class="btn btn-gray btn-md" role="button">取消</a>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /#tabs-1 -->
+
+                <div id="tab-lv2-2" class="tab-content">
+                  Table Lv2 - Tab2 的文字內容
+                </div><!-- /#tabs-2 -->
+              </div>
+          </div>

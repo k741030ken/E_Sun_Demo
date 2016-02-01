@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <title>玉山銀行 聯貸管理系統</title>
+  <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="css/lib/scrolltabs.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!--[if IE 9]>
+    <link rel="stylesheet" href="css/ie9.css">
+  <![endif]-->  
+</head>
+
+<body>
+
+  <header class="esb-header">
+    <div class="container">
+    <div class="back-home">
+      <a href="dashboard.html"></a>
+    </div>
+      <h1 class="logo">玉山銀行</h1>
+      <div class="sys-info">
+        <div class="sys-alert">
+          <a href="#">待審核</a>
+        </div>
+        <div class="user-file">
+          <a href="#">身分別</a>
+        </div>    
+        <div class="user-name">
+          <a href="#">陳大明</a>
+        </div>  
+        <div class="logout">
+          <a href="#">登出</a>
+        </div>   
+      </div>
+    </div><!-- /.container -->
+  </header>
+  
+  <nav class="esb-nav">
+    <div class="container">
+      <ul class="main-menu">
+        <li class="current"><a href="#"><i class="icon icon-profile"></i>基本資料建立</a>
+          <ul>
+            <li><a href="client-profile.html">顧客基本資料維護</a></li>
+            <li class="current"><a href="loan-case.html">聯貸案件資料維護</a></li>
+            <li><a href="ui-elements.html">UI元件列表</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-management"></i>管理作業</a>
+          <ul>
+            <li><a href="#">動撥作業</a></li>
+            <li><a href="#">收息作業</a></li>
+            <li><a href="#">還款作業</a></li>
+            <li><a href="#">清償作業</a></li>
+            <li><a href="#">到期作業</a></li>
+            <li><a href="#">到單註銷解除作業</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-change"></i>變更作業</a>
+          <ul>
+            <li><a href="#">額度移轉作業</a></li>
+            <li><a href="#">條件變更作業</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-fee"></i>費用登錄</a>
+          <ul>
+            <li><a href="#">主辦費產製</a></li>
+            <li><a href="#">管理費產製</a></li>
+            <li><a href="#">手續費產製</a></li>
+            <li><a href="#">作業費產製</a></li>
+            <li><a href="#">展延費產製</a></li>
+            <li><a href="#">補償費產製</a></li>
+            <li><a href="#">承諾費產製</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-report"></i>報表及查詢</a>
+          <ul>
+            <li><a href="#">顧客基本資料查詢</a></li>
+            <li><a href="#">案件資料查詢</a></li>
+            <li><a href="#">費用統計查詢</a></li>
+            <li><a href="#">變更條件查詢</a></li>
+            <li><a href="#">參貸行案件查詢</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-misc"></i>結案作業</a>
+          <ul>
+            <li><a href="#">未完成交易作業(處理註記)</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-maintain"></i>系統維護</a></li>
+      </ul>
+    </div><!-- /.container -->
+  </nav>
+
+  <h2 class="txn-title">
+    <div class="inner">聯貸案件資料維護</div>
+  </h2>
+
+  <main class="main-wrap">
+    <div class="container">
+      <div class="inner">
+
+
+        <div class="form-wrap">
+          <div class="form-row">
+            <div class="col-3">
+              <input id="radio-1" type="radio" name="radio-group-1">
+              <label for="radio-1" class="form-label-multi">
+                <span>
+                  <span class="form-label">借款人統編</span>
+                  <input type="text" placeholder="12345678" size="10">
+                </span>
+              </label>
+            </div>
+            <div class="col-5">
+              <input id="radio-2" type="radio" name="radio-group-1">
+              <label for="radio-2" class="form-label-multi">
+                <span>
+                  <span class="form-label">案件編號</span>
+                  <input type="text">
+                  <a href="#" class="btn btn-green btn-inline">查詢</a>
+                </span>
+              </label>
+            </div>
+            <div class="col-2"><span class="form-label">作業狀態</span></div>
+            <div class="col-2"><span class="text-field">查詢</span></div>
+          </div><!-- /.form-row -->
+          <div class="form-row">
+            <div class="table-wrapper">
+              <table class="datalist-table">
+                <thead>
+                  <tr>
+                    <th width="115">功能</th>
+                    <th width="32" class="text-center">序號</th>
+                    <th width="300">聯貸案名稱</th>
+                    <th>案件編號</th>
+                    <th>借款人統編</th>
+                    <th>借款人名稱</th>
+                    <th>案件狀態</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a id="show-hidden-block"  href="#" class="btn btn-table-func">編輯</a>
+                      <a href="#" class="btn btn-table-func btn-delete">刪除</a>
+                    </td>
+                    <td class="text-center">1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#" class="btn btn-table-func">編輯</a>
+                      <a href="#" class="btn btn-table-func btn-delete">刪除</a>
+                    </td>
+                    <td class="text-center">2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#" class="btn btn-table-func">編輯</a>
+                      <a href="#" class="btn btn-table-func btn-delete">刪除</a>
+                    </td>
+                    <td class="text-center">3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div><!-- /.form-row -->
+        </div>
+  
+      <hr>
+
+      <div class="row hidden">
+        <div class="tab-list-wrap">
+          <ul class="tabs txn-tab-lv1">
+            <li><a href="#tabs-1">案件資料</a></li>
+            <li><a href="#tabs-2">分項額度</a></li>
+            <li><a href="#tabs-3">共用額度</a></li>
+            <li><a href="#tabs-4">參貸行資料</a></li>
+            <li><a href="#tabs-5">參貸比例</a></li>
+            <li><a href="#tabs-6">擔保品</a></li>
+            <li><a href="#tabs-7">保險單</a></li>
+          </ul>
+        </div>
+        <div class="tab-content-wrap">
+          <div id="tabs-1" class="tab-content">
+            
+          </div><!-- /#tabs-1 -->
+
+          <div id="tabs-2" class="tab-content">
+            
+          </div><!-- /#tabs-2 -->
+
+          <div id="tabs-3" class="tab-content">
+            
+          </div><!-- /#tabs-3 -->
+
+          <div id="tabs-4" class="tab-content">
+            
+          </div><!-- /#tabs-4 -->
+
+          <div id="tabs-5" class="tab-content">
+
+          </div><!-- /#tabs-5 -->
+
+          <div id="tabs-6" class="tab-content">
+            
+          </div><!-- /#tabs-5 -->
+
+          <div id="tabs-7" class="tab-content">
+            
+          </div><!-- /#tabs-6 -->
+        </div>
+      </div>
+      
+      </div><!-- /.inner -->
+
+    </div><!-- /.container -->
+  </main>
+
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="js/lib/jquery.scrolltabs.js"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+    $( "#tabs-1" ).load( "parts/loan-case/tab1.html" );
+    $( "#tabs-2" ).load( "parts/loan-case/tab2.html" );
+    $( "#tabs-3" ).load( "parts/loan-case/tab3.html" );
+    $( "#tabs-4" ).load( "parts/loan-case/tab4.html" );
+    $( "#tabs-5" ).load( "parts/loan-case/tab5.html" );
+    $( "#tabs-6" ).load( "parts/loan-case/tab6.html" );
+    $( "#tabs-7" ).load( "parts/loan-case/tab7.html" );
+    $.getScript("js/scripts.js");
+  </script>
+
+</body>
+
+</html>

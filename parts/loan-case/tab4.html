@@ -1,0 +1,188 @@
+          <h3>參貸行資料維護</h3>
+            <div class="form-wrap">
+              <div class="form-row">
+                <div class="col-2"><span class="form-label"><label for="text-1">聯貸案名稱</label></span></div>
+                <div class="col-10"><input type="text"></div>
+              </div>
+              <div class="form-row">
+                <div class="col-2"><span class="form-label"><label for="text-1">授信總額度</label></span></div>
+                <div class="col-4"><span class="text-field"></span></div>
+                <div class="col-2"><span class="form-label"><label for="text-1">案件編號</label></span></div>
+                <div class="col-4"><span class="text-field"></span></div>
+              </div>
+              
+              <div class="row">
+                <div class="col-6"><h4>參貸行資訊：</h4></div>
+                <div class="col-6"><a href="#" class="btn btn-green btn-inline pull-right">帳戶及聯絡資訊匯出</a></div> 
+              </div>
+              
+              <div class="row">
+                <div class="tab-list-wrap">
+                  <ul id="" class="tabs txn-tab-lv2">
+                    <li><a href="#tab-lv2-3">玉山銀</a></li>
+                    <li><a href="#tab-lv2-4">新頁籤</a></li>
+                  </ul>
+                  <a href="#" class="add-tab-btn">新增</a>
+                </div>
+                <div class="tab-content-wrap">
+                  <div id="tab-lv2-3" class="tab-content">
+                    <div class="form-wrap">
+                      <div class="form-row">
+                        <div class="col-2"><span class="form-label">銀行正式名稱</span></div>
+                        <div class="col-6"><input type="text"><a href="#" class="btn btn-green btn-inline">查詢</a></div>
+                        <div class="col-2"><span class="form-label">銀行簡稱</span></div>
+                        <div class="col-2"></div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-2"><span class="form-label">銀行英文名稱</span></div>
+                        <div class="col-10"></div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-2"><span class="form-label">參貸行分行</span></div>
+                        <div class="col-10"><a href="#" class="btn btn-green btn-inline">查詢</a></div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-2"><span class="form-label">參貸行分行地址</span></div>
+                        <div class="col-10"></div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-2"><span class="form-label">參貸費率</span></div>
+                        <div class="col-10">
+                          <input id="radio-d1-1" type="radio" name="radio-group-d1">
+                          <label for="radio-d1-1" class="form-label-multi">
+                            <span>
+                              <span class="form-label">費率:</span>
+                              <input type="text" placeholder="999.9999" size="3"> %
+                            </span>
+                          </label>
+                          <input id="radio-d1-2" type="radio" name="radio-group-d1">
+                          <label for="radio-d1-2"><span class="form-label">Pool Fee</span></label>
+                          <input id="radio-d1-3" type="radio" name="radio-group-d1">
+                          <label for="radio-d1-3"><span class="form-label">金額</span></label>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <h4>新臺幣帳戶資訊(解款行)：</h4>
+                    <h5>解款行</h5>
+                    <div class="form-wrap">
+                      <div class="form-row">
+                        <div class="col-2"><span class="form-label">銀行名稱</span></div>
+                        <div class="col-6"><input type="text"></div>
+                        <div class="col-1"><span class="form-label">分行名稱</span></div>
+                        <div class="col-3"><input type="text"></div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-2"><span class="form-label">戶名</span></div>
+                        <div class="col-10"><input type="text"></div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-2"><span class="form-label">帳號</span></div>
+                        <div class="col-6"><input type="text"></div>
+                        <div class="col-1"><span class="form-label">銀行代號</span></div>
+                        <div class="col-3"><input type="text"></div>
+                      </div>
+                    </div>
+                    <hr>
+                    <h4>外幣帳戶資訊：</h4>
+                    <div class="form-wrap">
+                      <div class="form-row">
+                        <div class="col-2"><span class="form-label">受款行 SWIFT CODE</span></div>
+                        <div class="col-10"></div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-2"><span class="form-label">受款行銀行名稱</span></div>
+                        <div class="col-10"></div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-2"><span class="form-label">中間轉帳銀行(存同行) SWIFT CODE</span></div>
+                        <div class="col-10"></div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-2"><span class="form-label">中間轉帳銀行(存同行) 英文名稱</span></div>
+                        <div class="col-10"></div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-4"><span class="form-label">受款人名稱</span></div>
+                        <div class="col-8"></div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-2"><span class="form-label">電文註記</span></div>
+                        <div class="col-10"></div>
+                      </div>
+                    </div>
+                    <hr>
+                    <h4>聯絡資訊 Mailhunter：</h4>
+                    <div class="table-wrapper">
+                      <table class="datalist-table">
+                        <thead>
+                          <tr>
+                            <th width="115">功能</th>
+                            <th width="32">序號</th>
+                            <th width="100">職務別</th>
+                            <th>姓名</th>
+                            <th>Email</th>
+                            <th>電話</th>
+                            <th>傳真</th>
+                            <th>備註</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <a href="#" class="btn btn-table-func">修改</a>
+                              <a href="#" class="btn btn-table-func">刪除</a>
+                            </td>
+                            <td>1</td>
+                            <td>
+                              <select name="" id="">
+                                <option value="">帳務</option>
+                                <option value="">帳務</option>
+                                <option value="">帳務</option>
+                              </select>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="#" class="btn btn-table-func">修改</a>
+                              <a href="#" class="btn btn-table-func">刪除</a>
+                            </td>
+                            <td>2</td>
+                            <td>
+                              <select name="" id="">
+                                <option value="">RM Team</option>
+                                <option value="">RM Team</option>
+                                <option value="">RM Team</option>
+                              </select>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="btn-row">  
+                      <div class="row">
+                        <div class="col-12 text-center">
+                        <a href="#" class="btn btn-green btn-md" role="button">儲存</a>
+                        <a href="#" class="btn btn-gray btn-md" role="button">取消</a>
+                        <a href="#" class="btn btn-gray btn-md" role="button">刪除</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- /#tabs-1 -->
+                  <div id="tab-lv2-4" class="tab-content">
+                    新頁籤的內容
+                  </div><!-- /#tabs-2 -->
+                </div>
+              </div>
+
+            </div><!-- /.form-wrap -->

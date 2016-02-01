@@ -1,0 +1,5 @@
+/*IE9 Styles Overwrite*/
+select {
+	background-image: none !important;
+	padding: 2px !important;
+}

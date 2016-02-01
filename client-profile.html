@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <title>玉山銀行 聯貸管理系統</title>
+  <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="css/lib/scrolltabs.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!--[if IE 9]>
+    <link rel="stylesheet" href="css/ie9.css">
+  <![endif]-->  
+</head>
+
+<body>
+
+  <header class="esb-header">
+    <div class="container">
+    <div class="back-home">
+      <a href="dashboard.html"></a>
+    </div>
+      <h1 class="logo">玉山銀行</h1>
+      <div class="sys-info">
+        <div class="sys-alert">
+          <a href="#">待審核</a>
+        </div>
+        <div class="user-file">
+          <a href="#">身分別</a>
+        </div>    
+        <div class="user-name">
+          <a href="#">陳大明</a>
+        </div>  
+        <div class="logout">
+          <a href="#">登出</a>
+        </div>   
+      </div>
+    </div><!-- /.container -->
+  </header>
+  
+  <nav class="esb-nav">
+    <div class="container">
+      <ul class="main-menu">
+        <li class="current"><a href="#"><i class="icon icon-profile"></i>基本資料建立</a>
+          <ul>
+            <li class="current"><a href="client-profile.html">顧客基本資料維護</a></li>
+            <li><a href="loan-case.html">聯貸案件資料維護</a></li>
+            <li><a href="ui-elements.html">UI元件列表</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-management"></i>管理作業</a>
+          <ul>
+            <li><a href="#">動撥作業</a></li>
+            <li><a href="#">收息作業</a></li>
+            <li><a href="#">還款作業</a></li>
+            <li><a href="#">清償作業</a></li>
+            <li><a href="#">到期作業</a></li>
+            <li><a href="#">到單註銷解除作業</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-change"></i>變更作業</a>
+          <ul>
+            <li><a href="#">額度移轉作業</a></li>
+            <li><a href="#">條件變更作業</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-fee"></i>費用登錄</a>
+          <ul>
+            <li><a href="#">主辦費產製</a></li>
+            <li><a href="#">管理費產製</a></li>
+            <li><a href="#">手續費產製</a></li>
+            <li><a href="#">作業費產製</a></li>
+            <li><a href="#">展延費產製</a></li>
+            <li><a href="#">補償費產製</a></li>
+            <li><a href="#">承諾費產製</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-report"></i>報表及查詢</a>
+          <ul>
+            <li><a href="#">顧客基本資料查詢</a></li>
+            <li><a href="#">案件資料查詢</a></li>
+            <li><a href="#">費用統計查詢</a></li>
+            <li><a href="#">變更條件查詢</a></li>
+            <li><a href="#">參貸行案件查詢</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-misc"></i>結案作業</a>
+          <ul>
+            <li><a href="#">未完成交易作業(處理註記)</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-maintain"></i>系統維護</a></li>
+      </ul>
+    </div><!-- /.container -->
+  </nav>
+
+  <h2 class="txn-title">
+    <div class="inner">聯貸案件基本資料查詢</div>
+  </h2>
+
+  <main class="main-wrap">
+    <div class="container">
+      <div class="inner">
+
+        <div class="form-wrap">
+
+          <div class="form-row">
+            <div class="col-2"><span class="form-label required"><label for="text-1">統編</label></span></div>
+            <div class="col-6"><input type="text" id="text-1"><a href="#" class="btn btn-green btn-inline">查詢</a></div>
+            <div class="col-1"><span class="form-label"><label for="text-2">作業狀態</label></span></div>
+            <div class="col-3"><input type="text" id="text-2" placeholder=""></div>
+          </div>
+          <div class="form-row">
+            <div class="col-2"><span class="form-label required"><label for="text-3">公司名稱</label></span></div>
+            <div class="col-10"><input type="text" class="w90p"></div>
+          </div>
+          <div class="form-row">
+            <div class="col-2"><span class="form-label"><label for="text-4">英文名稱</label></span></div>
+            <div class="col-10"><input type="text" class="w90p"></div>
+          </div>
+          <div class="form-row">
+            <div class="col-2"><span class="form-label"><label for="text-5">國別</label></span></div>
+            <div class="col-4"><span class="text-field">臺灣</span></div>
+            <div class="col-2"><span class="form-label"><label for="text-6">上市櫃狀態</label></span></div>
+            <div class="col-4"><span class="text-field">上市</span></div>
+          </div>
+          <div class="form-row">
+            <div class="col-2"><span class="form-label"><label for="text-7">通訊地址</label></span></div>
+            <div class="col-10"><span class="text-field">新北市土城區工業區自由街2號</span></div>
+          </div>
+          <div class="form-row">
+            <div class="col-2"><span class="form-label"><label for="text-8">負責人姓名</label></span></div>
+            <div class="col-4"><span class="text-field">郭守成</span></div>
+            <div class="col-2"><span class="form-label"><label for="text-9">負責人統編</label></span></div>
+            <div class="col-4"><span class="text-field">12345678</span></div>
+          </div>
+          <div class="form-row">
+            <div class="col-2"><span class="form-label"><label for="text-10">主要聯絡人</label></span></div>
+            <div class="col-4"><span class="text-field">郭台銘</span></div>
+            <div class="col-2"><span class="form-label"><label for="text-11">職稱</label></span></div>
+            <div class="col-4"><span class="text-field">總經理</span></div>
+          </div>
+          <div class="form-row">
+            <div class="col-2"><span class="form-label"><label for="text-12">連絡電話</label></span></div>
+            <div class="col-4"><span class="text-field">02-2772-1566</span></div>
+            <div class="col-2"><span class="form-label"><label for="text-13">分機</label></span></div>
+            <div class="col-4"><span class="text-field">007</span></div>
+          </div>
+          <div class="form-row">
+            <div class="col-2"><span class="form-label"><label for="text-14">Email</label></span></div>
+            <div class="col-10"><span class="text-field">user@email.com</span></div>
+          </div>
+          <div class="form-row">
+            <div class="col-2"><span class="form-label"><label for="text-15">營業單位</label></span></div>
+            <div class="col-4"><span class="text-field">某某單位</span></div>
+            <div class="col-2"><span class="form-label"><label for="text-16">RM組代號</label></span></div>
+            <div class="col-4"><span class="text-field"></span></div>
+          </div>
+          <div class="form-row">
+            <div class="col-2"><span class="form-label"><label for="text-17">RM</label></span></div>
+            <div class="col-4"><span class="text-field">張淑慧</span></div>
+            <div class="col-2"><span class="form-label"><label for="text-18">PRM</label></span></div>
+            <div class="col-4"><span class="text-field">莊美惠</span></div>
+          </div>
+          <div class="form-row">
+            <div class="col-2"><span class="form-label"><label for="text-19">ARM</label></span></div>
+            <div class="col-4"><span class="text-field">葉欣怡</span></div>
+            <div class="col-2"><span class="form-label"><label for="text-20">資料日期時間</label></span></div>
+            <div class="col-4"><span class="text-field">105/01/07 10:00:00</span><a href="#" class="btn btn-green btn-inline">手動同步</a></div>
+          </div>
+          <div class="form-row">
+            <div class="col-2"><span class="form-label"><label for="text-20">帳戶</label></span></div>
+            <div class="col-10">
+              <div class="table-wrapper">
+                <table class="datalist-table">
+                  <thead>
+                    <tr>
+                      <th width="50%">帳號</th>
+                      <th>帳戶類型</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1234567890123456</td>
+                      <td>備償戶</td>
+                    </tr>
+                    <tr>
+                      <td>1234567890123456</td>
+                      <td>支存</td>
+                    </tr>
+                    <tr>
+                      <td>1234567890123456</td>
+                      <td>活期</td>
+                    </tr>
+                    <tr>
+                      <td>1234567890123456</td>
+                      <td>活儲</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!-- /.table-wrappe -->
+            </div>
+          </div>
+        </div><!-- /.form-wrap -->  
+        <div class="btn-row">  
+          <div class="row">
+            <div class="col-10 pull-right">
+              <a href="#" class="btn btn-green btn-md" role="button">儲存</a>
+              <a href="#" class="btn btn-gray btn-md" role="button">取消</a>
+            </div>
+          </div>
+        </div>   
+
+      </div><!-- /.inner -->
+
+    </div><!-- /.container -->
+  </main>
+
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="js/lib/jquery.scrolltabs.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

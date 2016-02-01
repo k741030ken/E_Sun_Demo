@@ -1,0 +1,580 @@
+        <h3>聯貸案件基本資料維護</h3>
+        <div class="form-wrap">
+          <div class="form-row">
+            <div class="col-2"><span class="form-label"><label for="">聯貸案名稱</label></span></div>
+            <div class="col-4"><span class="text-field">案件名稱</span></div>
+            <div class="col-2"><span class="form-label"><label for="">作業狀態</label></span></div>
+            <div class="col-4"><span class="text-field"></span></div>
+          </div>
+          <div class="form-row">
+            <div class="col-2"><span class="form-label"><label for="">聯貸案簡稱</label></span></div>
+            <div class="col-10"><span class="text-field">一二三四五六七八九十</span></div>
+          </div>
+          <div class="form-row">
+          	<div class="col-2"><span class="form-label"><label for="">總授信額度</label></span></div>
+          	<div class="col-4">
+          		<select name="" id="">
+          		  <option value="">NTD</option>
+          		  <option value="">USD</option>
+          		  <option value="">JPY</option>
+          		</select>
+          		<input type="text" size="28" placeholder="12,345,678,901,234,567,890"> 元
+          	</div>
+          	<div class="col-2"><span class="form-label"><label for="">案件編號</label></span></div>
+          	<div class="col-4"></div>
+          </div>
+          <div class="form-row">
+          	<div class="col-2"><span class="form-label"><label for="">簽約日期</label></span></div>
+          	<div class="col-4"><input type="text" class="input-date" placeholder="YY/MM/DD"></div>
+          	<div class="col-2"><span class="form-label"><label for="">首次動用日期</label></span></div>
+          	<div class="col-4"><input type="text" class="input-date" placeholder="YY/MM/DD"></div>
+          </div>
+          <div class="form-row">
+          	<div class="col-2"><span class="form-label"><label for="">經管經辦</label></span></div>
+          	<div class="col-4">
+          		<select name="" id="">
+          		  <option value="">XXX</option>
+          		  <option value="">YYY</option>
+          		  <option value="">ZZZ</option>
+          		</select>
+          	</div>
+          	<div class="col-2"><span class="form-label"><label for="">經管覆核主管</label></span></div>
+          	<div class="col-4">
+          		<select name="" id="">
+          		  <option value="">XXX</option>
+          		  <option value="">YYY</option>
+          		  <option value="">ZZZ</option>
+          		</select>
+          	</div>
+          </div>
+          <div class="form-row">
+          	<div class="col-2"><span class="form-label"><label for="">借款人</label></span></div>
+          	<div class="col-10">
+          		<div class="row">
+          			<span class="form-label"><label for="">統編:</label></span>
+          		  <input type="text">
+          		  <a href="#" class="btn btn-green btn-inline">新增</a>
+          		</div>
+          		<div class="row">
+          			<div class="table-wrapper">
+          			  <table class="datalist-table">
+          			    <thead>
+          			      <tr>
+          			        <th width="60">功能</th>
+          			        <th width="32" class="text-center">序號</th>
+          			        <th width="300">借款人統編</th>
+          			        <th>借款人/共同借款人名稱</th>
+          			      </tr>
+          			    </thead>
+          			    <tbody>
+          			      <tr>
+          			        <td>
+          			          <a href="#" class="btn btn-table-func btn-delete">刪除</a>
+          			        </td>
+          			        <td class="text-center">1</td>
+          			        <td></td>
+          			        <td></td>
+          			      </tr>
+          			      <tr>
+          			        <td>
+          			          <a href="#" class="btn btn-table-func btn-delete">刪除</a>
+          			        </td>
+          			        <td class="text-center">2</td>
+          			        <td></td>
+          			        <td></td>
+          			      </tr>
+          			      <tr>
+          			        <td>
+          			          <a href="#" class="btn btn-table-func btn-delete">刪除</a>
+          			        </td>
+          			        <td class="text-center">3</td>
+          			        <td></td>
+          			        <td></td>
+          			      </tr>
+          			    </tbody>
+          			  </table>
+          			</div><!-- /.table-wrapper -->
+          		</div>
+          	</div>
+          </div>
+          <div class="form-row">
+          	<div class="col-2"><span class="form-label"><label for="">連帶保證人</label></span></div>
+          	<div class="col-10">
+          		<div class="row">
+	          		<input id="radio-3" type="radio" name="radio-group-2">
+	          		<label for="radio-3" class="radio-multi-label"><span class="form-label">無</span></label>
+	          		<input id="radio-4" type="radio" name="radio-group-2">
+	          		<label for="radio-4" class="form-label-multi">
+	          			<span>
+	          				<span class="form-label">有，統編：</span>
+	          				<input type="text" placeholder="">
+	          				<a href="#" class="btn btn-green btn-inline">新增</a>
+	          			</span>
+	          		</label>
+	          		
+          		</div>
+          		<div class="row">	
+								<div class="table-wrapper">
+          			  <table class="datalist-table">
+          			    <thead>
+          			      <tr>
+          			        <th width="60">功能</th>
+          			        <th width="32" class="text-center">序號</th>
+          			        <th width="100">連保人統編</th>
+          			        <th>連保人名稱</th>
+          			      </tr>
+          			    </thead>
+          			    <tbody>
+          			      <tr>
+          			        <td>
+          			          <a href="#" class="btn btn-table-func btn-delete">刪除</a>
+          			        </td>
+          			        <td class="text-center">1</td>
+          			        <td>12345678</td>
+          			        <td>顧客基本資料檔無資料者，需自行輸入名稱。</td>
+          			      </tr>
+          			      <tr>
+          			        <td>
+          			          <a href="#" class="btn btn-table-func btn-delete">刪除</a>
+          			        </td>
+          			        <td class="text-center">2</td>
+          			        <td>12345678</td>
+          			        <td>顧客基本資料檔無資料者，需自行輸入名稱。</td>
+          			      </tr>
+          			      <tr>
+          			        <td>
+          			          <a href="#" class="btn btn-table-func btn-delete">刪除</a>
+          			        </td>
+          			        <td class="text-center">3</td>
+          			        <td>12345678</td>
+          			        <td>顧客基本資料已有資料建檔，無需輸入。</td>
+          			      </tr>
+          			    </tbody>
+          			  </table>
+          			</div><!-- /.table-wrapper -->
+          		</div>
+          	</div>
+          </div>
+          <div class="form-row">
+          	<div class="col-2"><span class="form-label"><label for="">新臺幣聯貸專戶</label></span></div>
+          	<div class="col-10">
+          		<div class="row">
+          			<input id="radio-5" type="radio" name="radio-group-3">
+          			<label for="radio-5"><span class="form-label">無</span></label>
+          			<input id="radio-6" type="radio" name="radio-group-3">
+          			<label for="radio-6"><span class="form-label">有，如下：</span></label>
+          		</div>
+
+      			  <table class="inner-form-table">
+        				<tr>
+        					<th width="200">分行別</th>
+        					<td></td>
+        					<th width="200">帳號</th>
+        					<td></td>
+        				</tr>
+        				<tr>
+        					<th>戶名</th>
+        					<td colspan="3"></td>
+        				</tr>
+        			</table>  			
+
+          	</div>
+          </div>
+          <div class="form-row">
+          	<div class="col-2"><span class="form-label"><label for="">存同行資訊</label></span></div>
+          	<div class="col-10">
+          		<div class="row">
+          			<input id="radio-7" type="radio" name="radio-group-3">
+          			<label for="radio-7"><span class="form-label">無</span></label>
+          			<input id="radio-8" type="radio" name="radio-group-3">
+          			<label for="radio-8"><span class="form-label">有，如下：</span></label>
+          		</div>
+
+      			  <table class="inner-form-table">
+        				<tr>
+        					<th width="200">中間轉帳銀行SWIFT CODE</th>
+        					<td></td>
+        				</tr>
+        				<tr>
+        					<th>中間轉帳銀行</th>
+        					<td></td>
+        				</tr>
+        				<tr>
+        					<th>受款人戶名SWIFT CODE</th>
+        					<td></td>
+        				</tr>
+        				<tr>
+        					<th>受款人戶名</th>
+        					<td></td>
+        				</tr>
+        			</table>  			
+
+          	</div>
+          </div>
+          <div class="form-row">
+          	<div class="col-2"><span class="form-label"><label for="">主辦費</label></span></div>
+          	<div class="col-10">
+
+      			  <table class="inner-form-table">
+        				<tr>
+        					<th width="200">收取方式</th>
+        					<td>
+        						
+        					</td>
+        				</tr>
+        				<tr>
+        					<th>指定(年/月/日)</th>
+        					<td>
+        						<input type="text"> <span class="description">(收取方式為簽約日時必填)</span>
+        					</td>
+        				</tr>
+        				<tr>
+        					<th>主辦費率</th>
+        					<td>
+        						<div class="form-row">
+        							<label for=""><span class="form-label">幣別：</span></label>
+        							<select name="" id="">
+        								<option value="">NTD </option>
+        								<option value="">USD</option>
+        								<option value="">JPY</option>
+        							</select>
+        						</div>
+        						<div class="form-row">
+        							<input type="radio" id="radio-9" name="radio-group-4">
+        							<label for="radio-9" class="form-label-multi">
+        								<span>
+        									<span class="form-label">固定金額: </span>
+        									<input for="radio-9" type="text" placeholder="1,234,567,890.00"> 元
+        								</span>
+        							</label>
+        							<input type="radio" id="radio-10" name="radio-group-4">
+        							<label for="radio-10" class="form-label-multi">
+        								<span>
+	        								<span class="form-label">費率: </span>
+	        								<input for="radio-10" type="text" placeholder="999.9999"> %
+        								</span>
+        							</label>
+        						</div>
+        					</td>
+        				</tr>
+        				<tr>
+        					<th>備註說明</th>
+        					<td>(首次動用時需檢查主辦費通知是否已發送，同時檢核第一次管理費是否收取)</td>
+        				</tr>
+        			</table>  			
+
+          	</div>
+          </div>
+          <div class="form-row">
+          	<div class="col-2"><span class="form-label"><label for="">管理費</label></span></div>
+          	<div class="col-10">
+          		<table class="inner-form-table">
+								<tr>
+									<th>收取方式</th>
+									<td>
+										<div class="form-row">
+											<input id="radio-11" type="radio" name="radio-group-5"><label for="radio-11">一次</label>
+											<input id="radio-12" type="radio" name="radio-group-5"><label for="radio-12">定期</label>
+											<input id="radio-13" type="radio" name="radio-group-5"><label for="radio-13">不定期(依備註說明)</label>
+											<input id="radio-14" type="radio" name="radio-group-5"><label for="radio-14">無</label>
+										</div>
+										<div class="form-row"><span class="description">(一次：同主辦費收取方式；定期：第一次收取同主辦費收取方式，第二次同主辦費每年相對日期)</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th>備註說明</th>
+									<td><span class="description">(首次動用時需檢查主辦費通知是否已發送，同時檢核第一次管理費是否收取)</span></td>
+								</tr>
+          		</table>
+          	</div>
+          </div>
+          <div class="form-row">
+          	<div class="col-2"><span class="form-label"><label for="">應收帳款匯入通知</label></span></div>
+          	<div class="col-10">
+          		<table class="inner-form-table">
+								<tr>
+									<th>週期1</th>
+									<td>
+										<input id="radio-15" type="radio" name="radio-group-6">
+										<label for="radio-15" class="form-label-multi">
+											<span>
+												<select name="" id="">
+													<option value="">本案</option>
+													<option value="">本案</option>
+													<option value="">本案</option>
+												</select> 首次動用日滿 <input type="text" placeholder="999" size="3"> 個月為起日，每 <input type="text" placeholder="999" size="3"> 個月為一期。
+											</span>								
+										</label><br>
+										<input id="radio-16" type="radio" name="radio-group-6">
+										<label for="radio-16" class="form-label-multi">
+											<span>
+												簽約日起滿 <input type="text" placeholder="999" size="3"> 個月為起日，每 <input type="text" placeholder="999" size="3"> 個月為一期。
+											</span>
+										</label><br>
+										<input id="radio-17" type="radio" name="radio-group-6">
+										<label for="radio-17" class="form-label-multi">
+											<span>
+												指定 <input type="text" placeholder="YYYY/MM/DD"> 個月為起日，每 <input type="text" placeholder="999" size="3"> 個月為一期。
+											</span>
+										</label><br>
+										<input id="radio-18" type="radio" name="radio-group-6">
+										<label for="radio-18" class="form-label-multi">
+											<span class="form-label">無</span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<th>週期2</th>
+									<td>
+										<input id="check-1" type="checkbox">
+										<label for="check-1">次一季度起每季季末</label>	
+									</td>
+								</tr>
+								<tr>
+									<th>備註說明</th>
+									<td></td>
+								</tr>
+          		</table>
+          	</div>
+          </div>
+          <div class="form-row">
+          	<div class="col-2"><span class="form-label"><label for="">財務承諾通知</label></span></div>
+          	<div class="col-10">
+          		<table class="inner-form-table">
+								<tr>
+									<th>週期</th>
+									<td>
+										<select name="" id="">
+											<option value="">每季：3/31、5/15、8/15、11/15</option>
+											<option value="">每季：3/31、5/15、8/15、11/15</option>
+											<option value="">每季：3/31、5/15、8/15、11/15</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th>每年指定(月/日)</th>
+									<td>
+										<input class="input-date" type="text" placeholder="MM/DD">
+										<input class="input-date" type="text" placeholder="MM/DD">
+										<input class="input-date" type="text" placeholder="MM/DD">
+										<input class="input-date" type="text" placeholder="MM/DD">
+									</td>
+								</tr>
+								<tr>
+									<th>備註說明</th>
+									<td><select name="" id="">
+										<option value="">每半年：3/31、8/15</option>
+										<option value="">每年：3/31</option>
+										<option value="">指定日期</option>
+										<option value="">無</option>
+									</select></td>
+								</tr>
+								<tr>
+									<th>聲明書天期</th>
+									<td><input type="text" placeholder="999" size="3"> 天</td>
+								</tr>
+          		</table>
+          	</div>
+          </div>
+          <div class="form-row">
+          	<div class="col-2"><span class="form-label"><label for="">加碼利率調整通知</label></span></div>
+          	<div class="col-10">
+          		<table class="inner-form-table">
+								<tr>
+									<th>週期</th>
+									<td>
+										<select name="" id="">
+											<option value="">每季：3/31、5/15、8/15、11/15</option>
+											<option value="">每季：3/31、5/15、8/15、11/15</option>
+											<option value="">每季：3/31、5/15、8/15、11/15</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th>每年指定(月/日)</th>
+									<td>
+										<input class="input-date" type="text" placeholder="MM/DD">
+										<input class="input-date" type="text" placeholder="MM/DD">
+										<input class="input-date" type="text" placeholder="MM/DD">
+										<input class="input-date" type="text" placeholder="MM/DD">
+									</td>
+								</tr>
+								<tr>
+									<th>備註說明</th>
+									<td><select name="" id="">
+										<option value="">每半年：3/31、8/15</option>
+										<option value="">每年：3/31</option>
+										<option value="">指定日期</option>
+										<option value="">無</option>
+									</select></td>
+								</tr>
+          		</table>
+          	</div>
+          </div>
+          <div class="form-row">
+          	<div class="col-2"><span class="form-label"><label for="">徵提報表</label></span></div>
+          	<div class="col-10">
+          		<table class="inner-form-table">
+								<tr>
+									<th>週期</th>
+									<td>
+										<select name="" id="">
+											<option value="">每季：3、6、9、12月</option>
+											<option value="">每季：3、6、9、12月</option>
+											<option value="">每季：3、6、9、12月</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th>每年指定(月/日)</th>
+									<td>
+										<input class="input-date" type="text" placeholder="MM/DD">
+										<input class="input-date" type="text" placeholder="MM/DD">
+										<input class="input-date" type="text" placeholder="MM/DD">
+										<input class="input-date" type="text" placeholder="MM/DD">
+									</td>
+								</tr>
+								<tr>
+									<th>備註說明</th>
+									<td><select name="" id="">
+										<option value="">每月</option>
+										<option value="">每半年</option>
+										<option value="">每年</option>
+										<option value="">無</option>
+									</select></td>
+								</tr>
+          		</table>          		
+          	</div>
+          </div>
+          <div class="form-row">
+          	<div class="col-2"><span class="form-label"><label for="">合約修改/豁免作業費</label></span></div>
+          	<div class="col-10">
+          		<table class="inner-form-table">
+								<tr>
+									<th>收取方式</th>
+									<td>
+										<input type="radio" id="radio-19" type="radio" name="radio-group-7"><label for="radio-19"><span class="form-label">無</span></label>
+										<input type="radio" id="radio-20" type="radio" name="radio-group-7"><label for="radio-20"><span class="form-label">有，如下：</span></label>
+									</td>
+								</tr>
+								<tr>
+									<th>費率</th>
+									<td>
+										<div class="form-row">
+        							<label for=""><span class="form-label">幣別：</span></label>
+        							<select name="" id="">
+        								<option value="">NTD </option>
+        								<option value="">USD</option>
+        								<option value="">JPY</option>
+        							</select>
+        						</div>
+        						<div class="form-row">
+        							<input type="checkbox" id="check-5" name="checkbox-group-1">
+        							<label for="check-5" class="form-label-multi">
+        								<span>
+        									<span class="form-label">固定金額</span>
+        								</span>
+        							</label>
+        							<input type="checkbox" id="check-6" name="checkbox-group-1">
+        							<label for="check-6" class="form-label-multi">
+        								<span>
+		        							<span class="multi-radio-label">費率: </span>
+		        							<input for="check-6" type="text" placeholder="999.9999"> %
+	        							</span>
+        							</label>
+        						</div>
+									</td>
+								</tr>
+								<tr>
+									<th>備註說明</th>
+									<td><span class="description">若選金額會在建參貸行比例跳出畫面輸入各參貸行作業費金額</span></td>
+								</tr>
+          		</table>
+          	</div>
+          </div>
+          <div class="form-row">
+          	<div class="col-2"><span class="form-label"><label for="">補償費</label></span></div>
+          	<div class="col-10">
+          		<table class="inner-form-table">
+								<tr>
+									<th>收取方式</th>
+									<td>
+
+									</td>
+								</tr>
+								<tr>
+									<th>費率</th>
+									<td>
+        						<div class="form-row">
+        							<div class="col-2"><label for="" class="form-label">額度取消：</label></div>
+        							<div class="col-10">
+	        							<input type="checkbox" id="check-7" name="checkbox-group-2">
+	        							<label for="check-7" class="form-label-multi">
+	        								<span>
+	        									<span class="form-label">固定金額</span>
+	        								</span>
+	        							</label>
+	        							<input type="checkbox" id="check-8" name="checkbox-group-2">
+	        							<label for="check-8" class="form-label-multi">
+	        								<span>
+			        							<span class="multi-radio-label">費率: </span>
+			        							<input for="" type="text" placeholder="999.9999"> %
+		        							</span>
+	        							</label>
+        							</div>
+        						</div>
+        						<div class="form-row">
+	        						<div class="col-2"><label for="" class="form-label">提前清償：</label></div>
+	        						<div class="col-10">
+		        						<input type="checkbox" id="check-9" name="checkbox-group-3">
+	        							<label for="check-9" class="form-label-multi">
+	        								<span>
+	        									<span class="form-label">固定金額</span>
+	        								</span>
+	        							</label>
+	        							<input type="checkbox" id="check-10" name="rcheckbox-group-3">
+	        							<label for="check-10" class="form-label-multi">
+	        								<span>
+			        							<span class="multi-radio-label">費率: </span>
+			        							<input for="check-6" type="text" placeholder="999.9999"> %
+		        							</span>
+	        							</label>
+        							</div>
+        						</div>
+									</td>
+								</tr>
+								<tr>
+									<th>備註說明</th>
+									<td>收取補償費通知內容</td>
+								</tr>
+          		</table>
+          	</div>
+          </div>
+          <div class="form-row">
+          	<div class="col-2"><span class="form-label"><label for="">轉讓費</label></span></div>
+          	<div class="col-10">
+          		<input type="radio" id="radio-21" type="radio" name="radio-group-7"><label for="radio-21" class="radio-multi-label"><span class="form-label">無</span></label>
+          		<input type="radio" id="radio-22" type="radio" name="radio-group-7">
+        			<label for="radio-22" class="form-label-multi">
+        				<span>
+        					<span class="form-label">有，固定金額：</span>
+									<select name="" id="">
+										<option value="">NTD</option>
+										<option value="">USD</option>
+										<option value="">JPY</option>
+									</select>
+									<input type="text" placeholder="1,234,567,890.00"> 元
+        				</span>
+        			</label>
+          	</div>
+          </div>
+          <div class="btn-row">   
+          	<div class="row">
+          		<div class="col-10 pull-right">
+			          <a href="#" class="btn btn-green btn-md" role="button">儲存</a>
+			          <a href="#" class="btn btn-green btn-md btn-delete" role="button">刪除本案</a>
+          		</div>
+          	</div>
+
+          </div>
+        </div><!-- /.form-wrap -->

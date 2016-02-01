@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <title>玉山銀行 聯貸管理系統</title>
+  <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="css/styles-dashboard.css">
+</head>
+
+<body>
+
+  <header class="esb-header">
+    <div class="container">
+      <h1 class="logo">玉山銀行</h1>
+      <div class="sys-info">
+        <div class="sys-alert">
+          <a href="#">待審核</a>
+        </div>
+        <div class="user-file">
+          <a href="#">身分別</a>
+        </div>    
+        <div class="user-name">
+          <a href="#">陳大明</a>
+        </div>  
+        <div class="logout">
+          <a href="#">登出</a>
+        </div>   
+      </div>
+    </div><!-- /.container -->
+  </header>
+  
+  <nav class="esb-nav">
+    <div class="container">
+      <ul class="main-menu">
+        <li><a href="#"><i class="icon icon-profile"></i>基本資料建立</a>
+          <ul>
+            <li><a href="client-profile.html">顧客基本資料維護</a></li>
+            <li><a href="loan-case.html">聯貸案件資料維護</a></li>
+            <li><a href="ui-elements.html">UI元件列表</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-management"></i>管理作業</a>
+          <ul>
+            <li><a href="#">動撥作業</a></li>
+            <li><a href="#">收息作業</a></li>
+            <li><a href="#">還款作業</a></li>
+            <li><a href="#">清償作業</a></li>
+            <li><a href="#">到期作業</a></li>
+            <li><a href="#">到單註銷解除作業</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-change"></i>變更作業</a>
+          <ul>
+            <li><a href="#">額度移轉作業</a></li>
+            <li><a href="#">條件變更作業</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-fee"></i>費用登錄</a>
+          <ul>
+            <li><a href="#">主辦費產製</a></li>
+            <li><a href="#">管理費產製</a></li>
+            <li><a href="#">手續費產製</a></li>
+            <li><a href="#">作業費產製</a></li>
+            <li><a href="#">展延費產製</a></li>
+            <li><a href="#">補償費產製</a></li>
+            <li><a href="#">承諾費產製</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-report"></i>報表及查詢</a>
+          <ul>
+            <li><a href="#">顧客基本資料查詢</a></li>
+            <li><a href="#">案件資料查詢</a></li>
+            <li><a href="#">費用統計查詢</a></li>
+            <li><a href="#">變更條件查詢</a></li>
+            <li><a href="#">參貸行案件查詢</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-misc"></i>結案作業</a>
+          <ul>
+            <li><a href="#">未完成交易作業(處理註記)</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-maintain"></i>系統維護</a></li>
+      </ul>
+    </div><!-- /.container -->
+  </nav>
+
+  <main>
+    <div class="container">
+      <section class="todo">
+        <div class="section-header">
+          <h2>待辦事項</h2>
+          <ul class="tabs todo-tabs">
+            <li><a href="#tabs-1">通知書</a><span class="item-amount">10</span></li>
+            <li><a href="#tabs-2">條件變更</a><span class="item-amount">1</span></li>
+            <li><a href="#tabs-3">未結案</a><span class="item-amount zero">0</span></li>
+            <li><a href="#tabs-4">當日已結案</a><span class="item-amount">1</span></li>
+          </ul>
+        </div><!-- /.section-header -->
+
+        <div class="section-content">
+
+          <div id="tabs-1" class="tab-content">
+            <div class="section-header">
+              <h3>通知書</h3><span class="item-amount">10</span>
+              <div class="sort-switch">
+                <input type="radio" id="sort-type-1a" name="sort-type-1" checked><label for="sort-type-1a">處理時限</label>
+                <input type="radio" id="sort-type-1b" name="sort-type-1"><label for="sort-type-1b">產生時間</label>
+              </div>
+            </div>
+            <div class="listWrap">
+              <ul class="list dot-list">
+                <li class="unread"><a href="#"><span class="title">產製案件[2010120101]日期[2015/12/17]繳息通知書</span><span class="date">2015/11/09</span></a></li>
+                <li class="unread"><a href="#"><span class="title">產製案件[2010120101]日期[2015/11/19]動撥通知書</span><span class="date">2015/11/08</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/19]動撥通知書</span><span class="date">2015/11/07</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/18]利率通知書</span><span class="date">2015/11/06</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/18]利率通知書</span><span class="date">2015/11/06</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/19]動撥通知書</span><span class="date">2015/11/07</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/18]利率通知書</span><span class="date">2015/11/06</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/18]利率通知書</span><span class="date">2015/11/06</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/19]動撥通知書</span><span class="date">2015/11/07</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/18]利率通知書</span><span class="date">2015/11/06</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/18]利率通知書 產製案件[2010120102]日期[2015/11/18]利率通知書 產製案件[2010120102]日期[2015/11/18]利率通知書產製案件[2010120102]日期[2015/11/18]利率通知書 產製案件[2010120102]日期[2015/11/18]利率通知書 產製案件[2010120102]日期[2015/11/18]利率通知書</span><span class="date">2015/11/06</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/19]動撥通知書</span><span class="date">2015/11/07</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/18]利率通知書</span><span class="date">2015/11/06</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/18]利率通知書</span><span class="date">2015/11/06</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/19]動撥通知書</span><span class="date">2015/11/07</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/18]利率通知書</span><span class="date">2015/11/06</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/18]利率通知書</span><span class="date">2015/11/06</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/19]動撥通知書</span><span class="date">2015/11/07</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/18]利率通知書</span><span class="date">2015/11/06</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/18]利率通知書</span><span class="date">2015/11/06</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/19]動撥通知書</span><span class="date">2015/11/07</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/18]利率通知書</span><span class="date">2015/11/06</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/18]利率通知書</span><span class="date">2015/11/06</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/19]動撥通知書</span><span class="date">2015/11/07</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/18]利率通知書</span><span class="date">2015/11/06</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/18]利率通知書</span><span class="date">2015/11/06</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/19]動撥通知書</span><span class="date">2015/11/07</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/18]利率通知書</span><span class="date">2015/11/06</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/18]利率通知書</span><span class="date">2015/11/06</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/19]動撥通知書</span><span class="date">2015/11/07</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/18]利率通知書</span><span class="date">2015/11/06</span></a></li>
+                <li><a href="#"><span class="title">產製案件[2010120102]日期[2015/11/18]利率通知書</span><span class="date">2015/11/06</span></a></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-more btn-green"></a>
+          </div><!-- /#tabs-1 -->
+
+          <div id="tabs-2" class="tab-content">
+            <div class="section-header">
+              <h3>條件變更</h3><span class="item-amount">1</span>
+              <div class="sort-switch">
+                <input type="radio" id="sort-type-2a" name="sort-type-2"><label for="sort-type-2a">處理時限</label>
+                <input type="radio" id="sort-type-2b" name="sort-type-2" checked><label for="sort-type-2b">產生時間</label>
+              </div>
+            </div>
+            <div class="listWrap">
+              <ul class="list dot-list">
+                <li class="unread"><a href="#">產製案件[2010120101]日期[2015/12/17]繳息通知書<span class="date">2015/11/09</span></a></li>
+                <li class="unread"><a href="#">產製案件[2010120101]日期[2015/11/19]動撥通知書<span class="date">2015/11/08</span></a></li>
+                <li><a href="#">產製案件[2010120102]日期[2015/11/19]動撥通知書 產製案件[2010120102]日期[2015/11/19]動撥通知書 <span class="date">2015/11/07</span></a></li>
+                <li><a href="#">產製案件[2010120102]日期[2015/11/18]利率通知書 產製案件[2010120102]日期[2015/11/18]利率通知書<span class="date">2015/11/06</span></a></li>
+                <li><a href="#">產製案件[2010120102]日期[2015/11/18]利率通知書<span class="date">2015/11/06</span></a></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-more btn-green"></a>
+          </div><!-- /#tabs-2 -->
+
+          <div id="tabs-3" class="tab-content">
+            <div class="section-header">
+              <h3>未結案</h3><span class="item-amount zero">0</span>
+              <div class="sort-switch">
+                <input type="radio" id="sort-type-3a" name="sort-type-3" checked><label for="sort-type-3a">處理時限</label>
+                <input type="radio" id="sort-type-3b" name="sort-type-3"><label for="sort-type-3b">產生時間</label>
+              </div>
+            </div>
+            <div class="listWrap">
+              <ul class="list dot-list">
+              </ul>
+            </div>
+            <a href="#" class="btn btn-more btn-green"></a>
+          </div><!-- /#tabs-2 -->
+
+          <div id="tabs-4" class="tab-content">
+            <div class="section-header">
+              <h3>當日已結案</h3><span class="item-amount">1</span>
+              <div class="sort-switch">
+                <input type="radio" id="sort-type-4a" name="sort-type-4" checked><label for="sort-type-4a">處理時限</label>
+                <input type="radio" id="sort-type-4b" name="sort-type-4"><label for="sort-type-4b">產生時間</label>
+              </div>
+            </div>
+            <div class="listWrap">
+              <ul class="list dot-list">
+                <li class="unread"><a href="#">產製案件[2010120101]日期[2015/12/17]繳息通知書<span class="date">2015/11/09</span></a></li>
+                <li class="unread"><a href="#">產製案件[2010120101]日期[2015/11/19]動撥通知書<span class="date">2015/11/08</span></a></li>
+                <li><a href="#">產製案件[2010120102]日期[2015/11/19]動撥通知書<span class="date">2015/11/07</span></a></li>
+                <li><a href="#">產製案件[2010120102]日期[2015/11/18]利率通知書<span class="date">2015/11/06</span></a></li>
+                <li><a href="#">產製案件[2010120102]日期[2015/11/18]利率通知書<span class="date">2015/11/06</span></a></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-more btn-green"></a>
+          </div><!-- /#tabs-2 -->          
+        </div><!-- /.section-content -->
+
+      </section><!-- / 待辦事項 -->
+
+      <section class="reports">
+        <div class="section-header">
+          <h2>報表</h2><span class="item-amount">6</span>
+        </div>
+        <div class="listWrap singleheader">     
+          <ul class="list dot-list">
+            <li class="unread"><a href="#">利潤績效管理</a></li>
+            <li class="unread"><a href="#">區域市場分析</a></li>
+            <li class="unread"><a href="#">額度利率分析</a></li>
+            <li><a href="#">管理費報表</a></li>
+            <li><a href="#">管理銀行成本報表</a></li>
+            <li><a href="#">聯貸案件到期明細表</a></li>
+          </ul>
+        </div>
+        <a href="#" class="btn btn-more btn-green"></a>
+      </section><!-- / 報表 -->
+
+      <section class="approve">
+        <div class="section-header">
+          <h2>待核事項</h2><span class="item-amount">5</span>
+        </div>
+        <div class="listWrap singleheader">
+          <ul class="list dot-list">
+            <li class="unread"><a href="#"><span class="title">利潤績效管理利潤績效管理利潤績效管理利潤績效管理</span><span class="date">2015/11/09</span></a></li>
+            <li class="unread"><a href="#"><span class="title">區域市場分析</span><span class="date">2015/11/08</span></a></li>
+            <li><a href="#"><span class="title">管理費報表</span><span class="date">2015/11/07</span></a></li>
+            <li><a href="#"><span class="title">管理銀行成本報表</span><span class="date">2015/11/06</span></a></li>
+          </ul>
+        </div>
+        <a href="#" class="btn btn-more btn-green"></a>
+      </section><!-- / 待核事項 -->
+
+    </div><!-- /.container -->
+  </main>
+
+  <aside>
+    <section class="schedule">
+      <div class="section-header">
+        <h2>行事曆</h2>
+        <a href="#" class="today-date">2016/01/06<span class="today-date-sm">(三)</span></a>
+      </div>
+      <div id="datepicker"></div>
+
+      <div class="schedule-todaylist">
+        <div class="section-header">
+          <h3>當日事項</h3>
+          <a href="#addEvent" class="btn btn-add btn-orange fRight" data-popup-target="#panel-wrap">新增</a>
+        </div>
+        <ul class="list schedule-list">
+          <li class="li-done"><a href="#">不動產擔保品之火險保單到期日通知</a></li>
+          <li class="li-todo"><a href="#">設定期限到期通知</a></li>
+          <li class="li-cancel"><a href="#">動用屆滿日通知</a></li>
+          <li class="li-done"><a href="#">額度遞減日通知</a></li>
+        </ul>
+      </div><!-- /.schedule-todaylist -->
+    </section><!-- / 行事曆 -->
+  </aside>
+
+  <div id="panel-wrap" class="panel-wrap">
+    <div class="panel-heading">
+      <h4 class="panel-title">新增行事曆</h4>
+      <a href="#" class="panel-close close-btn">&times;</a>
+    </div><!-- /.panel-heading -->
+    <div class="panel-content">
+
+      <div class="row">
+        <div class="col-5">
+          <img src="http://placehold.it/200/200" alt="">
+        </div>
+        <div class="col-7">
+          <div class="form-wrap">
+            <div class="form-row">
+              <div class="col-2"><span class="form-label"><label for="text-1">日期</label></span></div>
+              <div class="col-10"><span class="text-field">2016/01/06</span></div>
+            </div>
+            <div class="form-row">
+              <div class="col-2"><span class="form-label"><label for="text-1">標題</label></span></div>
+              <div class="col-10"><input type="text"></div>
+            </div>
+            <div class="form-row">
+              <div class="col-2"><span class="form-label"><label for="text-1">內容</label></span></div>
+              <div class="col-10"><textarea class="w90p" name="" id="" rows="5"></textarea></div>
+            </div>
+          </div><!-- /.form-wrap -->
+        </div>
+      </div>
+
+    </div><!-- /.panel-content -->
+  </div><!-- / #panel-wrap -->
+  <div class="popup-overlay"></div><!-- / .popup-overlay -->
+
+
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="js/scripts-dashboard.js"></script>
+  <!--[if IE 9]>
+    <script src="js/ie9.js"></script>
+  <![endif]-->  
+</body>
+
+</html>

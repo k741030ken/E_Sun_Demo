@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <title>玉山銀行 聯貸管理系統</title>
+  <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="css/lib/scrolltabs.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!--[if IE 9]>
+    <link rel="stylesheet" href="css/ie9.css">
+  <![endif]-->  
+</head>
+
+<body>
+
+  <header class="esb-header">
+    <div class="container">
+    <div class="back-home">
+      <a href="dashboard.html"></a>
+    </div>
+      <h1 class="logo">玉山銀行</h1>
+      <div class="sys-info">
+        <div class="sys-alert">
+          <a href="#">待審核</a>
+        </div>
+        <div class="user-file">
+          <a href="#">身分別</a>
+        </div>    
+        <div class="user-name">
+          <a href="#">陳大明</a>
+        </div>  
+        <div class="logout">
+          <a href="#">登出</a>
+        </div>   
+      </div>
+    </div><!-- /.container -->
+  </header>
+  
+  <nav class="esb-nav">
+    <div class="container">
+      <ul class="main-menu">
+        <li class="current"><a href="#"><i class="icon icon-profile"></i>基本資料建立</a>
+          <ul>
+            <li><a href="client-profile.html">顧客基本資料維護</a></li>
+            <li><a href="loan-case.html">聯貸案件資料維護</a></li>
+            <li class="current"><a href="ui-elements.html">UI元件列表</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-management"></i>管理作業</a>
+          <ul>
+            <li><a href="#">動撥作業</a></li>
+            <li><a href="#">收息作業</a></li>
+            <li><a href="#">還款作業</a></li>
+            <li><a href="#">清償作業</a></li>
+            <li><a href="#">到期作業</a></li>
+            <li><a href="#">到單註銷解除作業</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-change"></i>變更作業</a>
+          <ul>
+            <li><a href="#">額度移轉作業</a></li>
+            <li><a href="#">條件變更作業</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-fee"></i>費用登錄</a>
+          <ul>
+            <li><a href="#">主辦費產製</a></li>
+            <li><a href="#">管理費產製</a></li>
+            <li><a href="#">手續費產製</a></li>
+            <li><a href="#">作業費產製</a></li>
+            <li><a href="#">展延費產製</a></li>
+            <li><a href="#">補償費產製</a></li>
+            <li><a href="#">承諾費產製</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-report"></i>報表及查詢</a>
+          <ul>
+            <li><a href="#">顧客基本資料查詢</a></li>
+            <li><a href="#">案件資料查詢</a></li>
+            <li><a href="#">費用統計查詢</a></li>
+            <li><a href="#">變更條件查詢</a></li>
+            <li><a href="#">參貸行案件查詢</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-misc"></i>結案作業</a>
+          <ul>
+            <li><a href="#">未完成交易作業(處理註記)</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon icon-maintain"></i>系統維護</a></li>
+      </ul>
+    </div><!-- /.container -->
+  </nav>
+
+  <h2 class="txn-title">
+    <div class="inner">UI元件列表</div>
+  </h2>
+
+  <main class="main-wrap">
+    <div class="container">
+      <div class="inner">
+        <h3>Headings</h3>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+      </div>
+      <hr>
+      <div class="inner">
+        <h3>文字欄位</h3>
+        <div class="form-wrap">
+          <div class="form-row">
+            <div class="col-2"><span class="form-label required"><label for="text-1">欄位名稱</label></span></div>
+            <div class="col-10"><span class="text-field">欄位內容</span></div>
+          </div>
+          <div class="form-row">
+            <div class="col-2"><span class="form-label"><label for="text-1">欄位名稱</label></span></div>
+            <div class="col-10"><input id="text-1" type="text" placeholder="欄位" title="這是一個文字欄位"></div>
+          </div>
+          <div class="form-row">
+            <div class="col-2"><span class="form-label"><label for="text-2">欄位名稱</label></span></div>
+            <div class="col-10"><input id="text-2" class="focus" type="text" placeholder="欄位 Focus" title="這是 Focus 文字欄位"></div>
+          </div>
+          <div class="form-row">
+            <div class="col-2"><span class="form-label"><label for="text-3">欄位名稱</label></span></div>
+            <div class="col-10"><input id="text-3" type="text" placeholder="欄位 Disabled" disabled></div>
+          </div>
+          <div class="form-row">
+            <div class="col-2"><span class="form-label"><label for="text-4">欄位名稱</label></span></div>
+            <div class="col-10"><input id="text-4" class="error" type="text" placeholder="欄位 Error" title="這是 Error 文字欄位"></div>
+          </div>
+          <div class="form-row">
+            <div class="col-2"><span class="form-label"><label for="text-5">欄位名稱</label></span></div>
+            <div class="col-10"><input id="text-5" class="input-date" type="text" placeholder="YYYY/MM/DD" title="這是日期欄位"></div>
+          </div>
+          <div class="form-row">
+            <div class="col-2"><span class="form-label"><label for="textarea-1">欄位名稱</label></span></div>
+            <div class="col-10"><textarea name="" id="textarea-1" cols="100" rows="6" title="這是文字區塊這是文字區塊這是文字區塊這是文字區塊這是文字區塊這是文字區塊這是文字區塊這是文字區塊"></textarea></div>
+          </div>
+        </div><!-- / .form-wrap -->
+      </div>
+      <hr>
+      <div class="inner">
+        <h3>下拉選單</h3>
+        <div class="form-wrap">
+          <div class="form-row">
+            <div class="col-2 form-label"><label for="select-1">下拉選單</label></div>
+            <div class="col-10">
+              <select name="" id="select-1">
+                <option value="">選項一</option>
+                <option value="">選項二</option>
+                <option value="">選項三</option>
+                <option value="">選項四</option>
+                <option value="">選項五</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-2"><span class="form-label required"><label for="select-2">下拉選單</label></span></div>
+            <div class="col-10">
+              <select name="" id="select-1" class="focus">
+                <option value="">Focus</option>
+                <option value="">選項二</option>
+                <option value="">選項三</option>
+                <option value="">選項四</option>
+                <option value="">選項五</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-2 form-label"><label for="select-3">下拉選單 </label></div>
+            <div class="col-10">
+              <select name="" id="select-1" disabled>
+                <option value="">Disable</option>
+                <option value="">選項二</option>
+                <option value="">選項三</option>
+                <option value="">選項四</option>
+                <option value="">選項五</option>
+              </select>
+            </div>
+          </div> 
+        </div><!-- / .form-wrap -->
+      </div>
+      <hr>
+      <div class="inner">
+        <h3>Checkbox</h3>
+        <div class="form-wrap">
+          <div class="form-row">
+            <div class="col-2 form-label"><label>欄位名稱</label></div>
+            <div class="col-10 checkboxes">
+              <input id="checkbox-1" type="checkbox" checked><label for="checkbox-1"><span class="form-label">選項</span></label>
+              <input id="checkbox-2" type="checkbox"><label for="checkbox-2"><span class="form-label">選項</span></label>
+              <input id="checkbox-3" type="checkbox" disabled><label for="checkbox-3"><span class="form-label">選項</span></label>
+            </div>                  
+          </div>
+          <div class="form-row">
+            <div class="col-2 form-label"><label>多元件欄位</label></div>
+            <div class="col-10 checkboxes">
+              <input id="checkbox-4" type="checkbox" checked>
+              <label for="checkbox-4" class="form-label-multi">
+                <span>
+                  <label for="">第二層</label><input type="text">
+                </span>
+              </label>
+              <input id="checkbox-5" type="checkbox">
+              <label for="checkbox-5" class="form-label-multi">
+                <span>
+                  <input id="checkbox-a1" type="checkbox"><label for="checkbox-a1">選項</label>
+                  <input id="checkbox-a2" type="checkbox"><label for="checkbox-a2">選項</label>
+                  <input id="checkbox-a3" type="checkbox"><label for="checkbox-a3">選項</label>
+                </span>
+              </label>
+              <input id="checkbox-6" type="checkbox">
+              <label for="checkbox-6" class="form-label-multi">
+                <span>
+                  <input id="radio-1" type="radio" name="radio-group-1"><label for="radio-1">選項</label>
+                  <input id="radio-2" type="radio" name="radio-group-1"><label for="radio-2">選項</label>
+                  <input id="radio-3" type="radio" name="radio-group-1"><label for="radio-3">選項</label>
+                </span>
+              </label>
+            </div>                  
+          </div>
+        </div><!-- / .form-wrap -->
+      </div>
+      <hr>
+      <div class="inner">
+        <h3>Radio Button</h3>
+        <div class="form-wrap">
+          <div class="form-row">
+            <div class="col-2 form-label"><label>欄位名稱</label></div>
+            <div class="col-10">        
+              <input id="radio-4" type="radio" name="radio-group-2" checked><label for="radio-4"><span class="form-label">選項</span></label>
+              <input id="radio-5" type="radio" name="radio-group-2"><label for="radio-5"><span class="form-label">選項</span></label>
+              <input id="radio-6" type="radio" name="radio-group-2" disabled><label for="radio-6"><span class="form-label">選項</span></label>
+            </div>
+          </div>
+        </div><!-- / .form-wrap -->
+      </div>
+      <hr>
+      <div class="inner">
+        <h3>按鈕</h3>
+        <div class="row">        
+          <a href="#" class="btn btn-green btn-md" role="button">按鈕</a>
+          <a href="#" class="btn btn-green btn-md hover" role="button">按鈕 Hover</a>
+          <a href="#" class="btn btn-green btn-md focus" role="button">按鈕 Focus</a>
+          <a href="#" class="btn btn-green btn-md active" role="button">按鈕 Active</a>
+          <a href="#" class="btn btn-green btn-md disabled" role="button">按鈕 Disable</a>
+        </div>
+      </div>
+      <div class="btn-row">  
+        <div class="inner">     
+          <a href="#" class="btn btn-green btn-md" role="button">按鈕</a>
+          <a href="#" class="btn btn-green btn-md hover" role="button">按鈕 Hover</a>
+          <a href="#" class="btn btn-green btn-md focus" role="button">按鈕 Focus</a>
+          <a href="#" class="btn btn-green btn-md active" role="button">按鈕 Active</a>
+          <a href="#" class="btn btn-green btn-md disabled" role="button">按鈕 Disable</a>
+        </div> 
+      </div>
+      <hr>
+      <div class="inner">
+        <h3>卡片</h3>
+        <div class="card">
+          <a href="#" class="card-close close-btn">&times;</a>
+          <div class="card-content">
+            <div class="form-wrap">
+              <div class="form-row">
+                <div class="col-1 form-label"><label for="text-1">欄位名稱</label></div>
+                <div class="col-11"><input id="text-1" type="text" placeholder="欄位"></div>
+              </div>
+              <div class="form-row">
+                <div class="col-1 form-label"><label for="text-1">欄位名稱</label></div>
+                <div class="col-11"><input id="text-1" type="text" placeholder="欄位"></div>
+              </div>
+              <div class="form-row">
+                <div class="col-1 form-label"><label for="text-1">欄位名稱</label></div>
+                <div class="col-11"><input id="text-1" type="text" placeholder="欄位"></div>
+              </div>
+            </div><!-- /.form-wrap -->
+          </div><!-- /.card-content -->
+        </div><!-- /.card -->
+        <div class="card-add-btn-wrap">
+          <a href="#" class="card-add-btn">&#43;</a>
+        </div><!-- /.card-add-btn-wrap -->
+      </div>
+      <hr>
+      <div class="inner">
+        <h3>Panel</h3>
+        <div class="panel-wrap" style="position: relative; opacity:1; z-index:10000;">
+          <div class="panel-heading">
+            <h4 class="panel-title">標題文字標題文字</h4>
+            <a href="#" class="panel-close close-btn">&times;</a>
+          </div>
+          <div class="panel-content">
+            test
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="inner">
+        <h3>Datalist</h3>
+        <div class="table-wrapper">
+          <table class="datalist-table">
+            <thead>
+              <tr>
+                <th>標題文字</th>
+                <th>標題文字</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>12345678901234</td>
+                <td>內容文字</td>
+              </tr>
+              <tr>
+                <td>12345678901234</td>
+                <td>內容文字</td>
+              </tr>
+              <tr>
+                <td>12345678901234</td>
+                <td>內容文字</td>
+              </tr>
+              <tr>
+                <td>12345678901234</td>
+                <td>內容文字</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- /.table-wrapper -->
+      </div>
+      <hr>
+      <div class="inner">
+        <h3>Tabs</h3>
+        <div class="row">
+          <div class="tab-list-wrap">
+            <ul class="tabs txn-tab-lv1">
+              <li><a href="#tabs-1">Tab 1</a></li>
+              <li><a href="#tabs-2">Tab 2</a></li>
+            </ul>
+          </div>
+          <div class="tab-content-wrap">
+            <div id="tabs-1" class="tab-content">
+              Tab1 的文字內容
+            </div><!-- /#tabs-1 -->
+            <div id="tabs-2" class="tab-content">
+              Tab2 的文字內容
+            </div><!-- /#tabs-2 -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="tab-list-wrap">
+            <ul id="tabSet" class="tabs txn-tab-lv2">
+              <li><a href="#tab-lv2-1">Tab 1</a></li>
+              <li><a href="#tab-lv2-2">Tab 2</a></li>
+              <li><a href="#tab-lv2-3">Tab 3</a></li>
+              <li><a href="#tab-lv2-4">Tab 4</a></li>
+              <li><a href="#tab-lv2-5">Tab 5</a></li>
+              <li><a href="#tab-lv2-6">Tab 6</a></li>
+              <li><a href="#tab-lv2-7">Tab 7</a></li>
+              <li><a href="#tab-lv2-8">Tab 8</a></li>
+              <li><a href="#tab-lv2-9">Tab 9</a></li>
+              <li><a href="#tab-lv2-10">Tab 10</a></li>
+              <li><a href="#tab-lv2-11">Tab 11</a></li>
+              <li><a href="#tab-lv2-12">Tab 12</a></li>         
+            </ul>
+            <a href="#" class="add-tab-btn">新增 TAB</a>
+            <!-- <a href="#" class="add-tab-btn">新增</a> -->
+          </div>
+          <div class="tab-content-wrap">
+            <div id="tab-lv2-1" class="tab-content">
+              Table Lv2 - Tab1 的文字內容
+            </div><!-- /#tabs-1 -->
+            <div id="tab-lv2-2" class="tab-content">
+              Table Lv2 - Tab2 的文字內容
+            </div><!-- /#tabs-2 -->
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+  </main>
+
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="js/lib/jquery.scrolltabs.js"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+    var tabSet = null;
+    $(document).ready(function(){
+      tabSet = $('#tabSet').scrollTabs();
+      //tabSet.addTab('<li>New Tab</li>');
+      $('.add-tab-btn').on('click',function(e){
+        e.preventDefault();
+        console.log('clicked!');
+        tabSet.addTab('<li><a href="#tab-lv2-new">New Tab</a></li>');
+      });
+      $(document).tooltip({
+        position: {
+          my: "center bottom-10",
+          at: "center top",
+          using: function( position, feedback ) {
+            $( this ).css( position );
+            $( "<div>" )
+              .addClass( "arrow" )
+              .addClass( feedback.vertical )
+              .addClass( feedback.horizontal )
+              .appendTo( this );
+          }
+        }
+      });
+      // $('.panel-wrap').draggable();
+    });
+  </script>
+  <!--[if IE 9]>
+    <script src="js/ie9.js"></script>
+  <![endif]-->  
+</body>
+
+</html>
